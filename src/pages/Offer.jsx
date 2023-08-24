@@ -27,10 +27,30 @@ const Offer = () => {
   return isLoading ? (
     <p>Loading...</p>
   ) : (
-    <div>
-      <img src={data.product_image.secure_url} alt={data.product_name} />
-      <p>{data.product_price} €</p>
-    </div>
+    <main className="container">
+      <div className=" offer-page">
+        <img src={data.product_image.secure_url} alt={data.product_name} />
+        <div>
+          <p>{data.product_price} €</p>
+          {data.product_details.map((detail, index) => {
+            console.log(detail);
+            const keys = Object.keys(detail);
+            // console.log(keys);
+            const key = keys[0];
+            // console.log(key);
+            return (
+              <p key={index}>
+                {key} : {detail[key]}
+              </p>
+            );
+          })}
+
+          <div>
+            <button>Acheter</button>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 };
 
