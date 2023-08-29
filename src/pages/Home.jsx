@@ -32,7 +32,9 @@ const Home = () => {
         </div>
         <div className="text-banner">
           <h2>Prêts à faire du tri dans vos placards?</h2>
-          <button>Commencer à vendre</button>
+          <Link to="Signup">
+            <button>Commencer à vendre</button>
+          </Link>
         </div>
       </div>
 
@@ -55,7 +57,7 @@ const Home = () => {
                 <img
                   className="picture"
                   src={offer.product_image.secure_url}
-                  alt={offer.product_neme}
+                  alt={offer.product_name}
                 />
                 <p>{offer.product_price} €</p>
 

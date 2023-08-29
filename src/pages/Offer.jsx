@@ -34,14 +34,13 @@ const Offer = () => {
           <p>{data.product_price} €</p>
           {data.product_details.map((detail, index) => {
             console.log(detail);
-            const keys = Object.keys(detail);
+            const keyName = Object.keys(detail);
             // console.log(keys);
-            const key = keys[0];
-            // console.log(key);
+
             return (
-              <p key={index}>
-                {key} : {detail[key]}
-              </p>
+              <div key={index}>
+                <span>{keyName[0]} : </span> <span>{detail[keyName[0]]} </span>
+              </div>
             );
           })}
 

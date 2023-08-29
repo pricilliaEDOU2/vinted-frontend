@@ -128,3 +128,48 @@ main {
   padding: 10px;
   width: 250px;
 }
+/*PAGES SIGNUP ET LOGIN*/
+
+.signup {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+}
+.signup input {
+  align-items: center;
+  margin: 15px;
+  padding-bottom: 2px;
+  border: none;
+  border-bottom: 1px solid #fdced2;
+  width: 70%;
+}
+.signup h1 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.signup div {
+  display: flex;
+  align-items: center;
+}
+.signup div input {
+  width: 20px;
+}
+.submit {
+  margin-left: 55px;
+  background-color: #2cb1ba;
+  color: white;
+  border: none;
+  border: none;
+  width: 100%;
+  align-items: center;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.signup p {
+  color: #2cb1ba;
+  text-align: center;
+  font-size: 10px;
+}
